@@ -42,9 +42,9 @@ public class AppDelegate : UIApplicationDelegate {
 	        for (int i = 0; i < controllers.Length; i++) {
 	            var controller = controllers [i];
 	            Console.WriteLine ("        #{0}: {1}", i, controller);
-	            Console.WriteLine ("            ExtendedGamepad: 0x{0} = {1}", controller.ExtendedGamepad?.Handle, controller.ExtendedGamepad);
-	            Console.WriteLine ("                ButtonHome: 0x{0} = {1}", controller.ExtendedGamepad?.ButtonHome?.Handle, controller.ExtendedGamepad?.ButtonHome);
-	            Console.WriteLine ("                LeftThumbstickButton: 0x{0} = {1}", controller.ExtendedGamepad?.LeftThumbstickButton?.Handle, controller.ExtendedGamepad?.LeftThumbstickButton);
+	            Console.WriteLine ("            ExtendedGamepad: {0} = {1}", controller.ExtendedGamepad?.Handle, controller.ExtendedGamepad);
+	            Console.WriteLine ("                ButtonHome: {0} = {1}", controller.ExtendedGamepad?.ButtonHome?.Handle, controller.ExtendedGamepad?.ButtonHome);
+	            Console.WriteLine ("                LeftThumbstickButton: {0} = {1}", controller.ExtendedGamepad?.LeftThumbstickButton?.Handle, controller.ExtendedGamepad?.LeftThumbstickButton);
 	        }
 		});
 	}
